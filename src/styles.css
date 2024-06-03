@@ -1,0 +1,318 @@
+body {
+  font-family: cinzel;
+  margin: 0;
+  padding: 0;
+  padding-top: 3em; /* Espacio para el nav fijo */
+}
+p{
+  font-family: arial;
+}
+ button {
+  color: white;
+  padding: 10px 30px;
+  background-color: transparent;
+  border: white 1px solid;
+}
+ button:hover {
+  background-color: white;  
+  color: black;
+}
+/* NAV */
+nav {
+  /* background-image: url('/IMG/EstrellasCambiar.jpg'); */
+
+  background-color: #22203b;
+  color: rgb(255, 255, 255);
+  padding: 1vw;
+  position: fixed;
+  top: 0;
+  padding: 10px 10px;
+  width: 100%;
+  /* box-shadow: 0 3px 11px black; */
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-position: center;
+  z-index: 1000; /* Asegúrate de que el nav esté siempre encima del contenido */
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  align-items: center; /* Alinea verticalmente los elementos */
+  justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+li.centro {
+  padding: 0 2em;
+}
+
+li.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px; /* Ajusta el ancho según sea necesario para centrar la imagen */
+}
+
+li.logo:hover {
+  cursor: pointer;
+}
+
+nav ul li {
+  flex-basis: 200px; /* Permite que todos los elementos crezcan igualmente */
+  text-align: center; /* Centra el texto en cada elemento */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  transition: transform 0.3s ease; /* Transición para el efecto de escala */
+  display: inline-block; /* Asegura que el efecto transform funcione adecuadamente */
+}
+
+nav ul li a:hover {
+  transform: scale(1.1); /* Escala el tamaño del texto en hover */
+}
+
+nav ul li img {
+  height: 40px; /* Ajusta el tamaño del logo según sea necesario */
+  width: auto; /* Mantiene la proporción del logo */
+}
+
+/* SECTIONS */
+
+/*  INICIO   */
+
+div.inicio {
+  background-image: url('/IMG/EstrellasCambiar.jpg');
+  background-color: #22203b;
+  background-repeat: repeat-x;
+  background-position: center;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+div.inicio img {
+  width: 50%;
+  height: auto;
+}
+
+/*  SOBRENOSOTROS   */
+div#SobreNosotros {
+  z-index: 90; /* Asegúrate de que el nav esté siempre encima del contenido */
+display:flex;
+  background-color: #22203b;
+  color:white;
+  height: auto;
+
+}
+div#SobreNosotros div.texto{
+  flex: 1.5;
+  padding-right: -20px;
+}
+
+div#SobreNosotros div.imagen{
+  flex: 2;
+  padding-left: 50px;
+background-image:url("../IMG/Capa2.png");
+background-size: cover;
+}
+
+div#SobreNosotros h1{
+ text-align: center; 
+}
+div#SobreNosotros p{
+  margin: 0em 15% 0 15%;
+  margin-top: 3em;
+  padding-bottom: 3em;
+
+}
+div.espacio h1{
+  padding-top: 1em;
+  margin: 0px 2px;
+}
+
+/*  ZENITH   */
+
+div#Zenith {
+  background-color: #16072a;
+  background-image: url("../IMG/Capilla.png");
+  background-attachment:scroll;
+  background-size: cover;  background-repeat: no-repeat;
+  text-align:center;
+  position: relative;
+
+}
+div#Zenith > div#centrado{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  height: auto;
+  width: 50%;
+  background-color: hsla(244, 30%, 18%, 75%);
+  /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
+  border: #22203b solid 5px;
+  color:white;
+  font-size: 25px;
+}
+div#centrado p {
+  margin-top:10px;
+  margin: 0em 10% 2em 10%;
+}
+div#centrado button {
+
+  margin-bottom: 2em;
+
+}
+
+/*  EQUIPO   */
+
+div#Equipo {
+  z-index: 90; /* Asegúrate de que el nav esté siempre encima del contenido */
+display:flex;
+  background-color: #22203b;
+  color:white;
+  height: auto;
+
+}
+div#Equipo div.texto{
+  flex: 1.5;
+  padding-right: -20px;
+}
+
+div#Equipo div.imagen{
+  flex: 2;
+  padding-left: 50px;
+background-image:url("../IMG/Capa3.png");
+background-size: cover;
+}
+div#Equipo div{
+align-items: center;
+}
+div#Equipo button{
+  margin-left: 35%;
+
+}
+div#Equipo h1{
+ text-align: center; 
+}
+div#Equipo p{
+  margin: 0em 15% 0 15%;
+  margin-top: 3em;
+  padding-bottom: 3em;
+
+}
+div.espacio h1{
+  padding-bottom: 1em;
+  padding-top: 1em;
+  margin: 0px 2px;
+}
+ 
+/*  CONTACTO   */
+div#Contacto {
+ 
+  background-color: #22203b;
+  color:white;
+  height: auto ;
+  padding: 5%; 
+}
+div#Contacto h1{
+  text-align: center;
+}
+div#Contacto div.contener{
+  display: flex;
+}
+div#Contacto div.uno{
+  margin: 1vw;
+  flex: 2;
+
+  background-color: #34315a;
+  width: 40%;
+  height: 30vh;
+}
+div.contactar h1{
+  margin-top: -20px;
+}
+div#Contacto div.dos{
+  margin: 1vw;
+  flex: 1;
+
+  background-color: #34315a;
+  width: 40%;
+  height: 30vh;
+
+}
+
+/*  FORMULARIO  */
+
+form {
+  margin: 20px;
+  width: auto;
+}
+
+.name-fields {
+  display: flex;
+  justify-content: space-between;
+}
+
+.field-container {
+  flex: 1;
+}
+
+.field-container:not(:last-child) {
+  margin-right: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #26203A;
+  color: white;
+}
+
+textarea {
+  height: 100px;
+}
+
+
+
+
+div.espacio {
+  height: 90vh;
+  scroll-margin-top: 86px; /* Ajusta este valor a la altura de tu nav */
+}
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.footer-element p {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.footer-element h2 {
+  flex: 1;
+  text-align: center;
+}
