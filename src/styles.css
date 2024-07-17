@@ -28,7 +28,7 @@ nav {
   top: 0;
   padding: 10px 10px;
   width: 100%;
-  /* box-shadow: 0 3px 11px black; */
+  box-shadow: 0 3px 11px black;
   background-repeat: repeat-x;
   background-size: cover;
   background-position: center;
@@ -286,7 +286,7 @@ div.redes_dos:hover{
   background-color: red;
 }
 div.redes_tres:hover{
-  background-color: #2c68ff;
+  background-color: #1a2b3c;
 }
 div.redes_cuatro:hover{
   background-color: #2767c5;
@@ -337,7 +337,7 @@ textarea {
 
 textarea#mensaje {
   width: 97%;
-  min-width: 75%;
+  min-width: 97%;
   max-width: 97%;
   min-height: 75%;
   height: 100%;
@@ -351,6 +351,85 @@ div.espacio {
   height: 90vh;
   scroll-margin-top: 86px; /* Ajusta este valor a la altura de tu nav */
 }
+
+/* EQUIPO */
+
+body.team{
+  
+  background-color: #26203A;
+
+}
+div#team{
+  padding-bottom: 10px;
+  text-align: center;
+  color:white;
+
+}
+div#csvContainer{
+    margin-top: 5px;
+
+  background-color: #34315a;
+  margin: 2em;
+  padding: 5em;
+  display:flex;
+  flex-wrap: wrap;
+  border-radius: 2em;
+
+}
+div.teamIndividual{
+  
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  display: flex;
+  width: 200px;
+  height: auto;
+  margin-left: 70px;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+}
+
+.teamIndividual img {
+  max-width: 95%; /* Imagen no puede ser más ancha que el contenedor */
+  height: auto; /* Ajustar la altura según el ancho */
+  display: block; /* Asegurar que la imagen no tenga espacios adicionales */
+  margin: auto auto; /* Centrar la imagen dentro del contenedor (opcional) */
+  margin-top: 5px;
+padding-bottom: 10px;
+}
+.teamIndividual:hover{
+  transform: scale(1.1);
+}
+div.teamIndividual{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  background-color:#22203b;
+  /* height: auto; */
+  align-items: baseline;
+}
+
+
+div.teamIndividual h3,
+div.teamIndividual p {
+color: whitesmoke;
+text-align: left;
+align-items: baseline;
+margin: 0px;
+padding-left: 5px;
+
+}
+div.teamIndividual h3{
+  color: white;
+  flex-grow: 6;
+
+}
+div.teamIndividual p {
+flex-grow: 0;
+}
+
 /* FOOTER */
 .footer {
   display: flex;
