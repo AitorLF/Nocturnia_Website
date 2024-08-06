@@ -21,6 +21,7 @@ p, li{
 nav {
   /* background-image: url('/IMG/EstrellasCambiar.jpg'); */
 
+  /* Color del NAV */
   background-color: #22203b;
   color: rgb(255, 255, 255);
   padding: 1vw;
@@ -41,7 +42,7 @@ nav ul {
   margin: 0;
   display: flex;
   align-items: center; /* Alinea verticalmente los elementos */
-  justify-content: center; /* Centra los elementos horizontalmente */
+  justify-content: space-evenly; /* Centra los elementos horizontalmente */
 }
 
 li.centro {
@@ -85,17 +86,33 @@ nav ul li img {
 
 /*  INICIO   */
 
-div.inicio {
-  background-image: url('/IMG/EstrellasCambiar.jpg');
+img#transparente
+{
+  
+  position: absolute;
+}
+div.inicio {  
+  background-image: url('/IMG/clouds-lg.png');
   background-color: #22203b;
-  background-repeat: repeat-x;
-  background-position: center;
+  
+  /* Ajusta el fondo para que se adapte al tamaño del div */
+  background-size: cover;  /* Cubre todo el div */
+  background-position: center 200px; /* Centra la imagen */
+  background-repeat: repeat-x; /* Repite solo en el eje horizontal */
+  
   color: white;
   text-align: center;
   font-size: 1.5em;
-  padding-bottom: 50px;
   padding-top: 50px;
+
+  animation: moveClouds 3s linear infinite; /* Ajusta el tiempo para la animación */
 }
+
+@keyframes moveClouds {
+  0% { background-position: 0 0; }
+  100% { background-position: -200vw 0; } /* Mueve el fondo de izquierda a derecha basado en el ancho de la ventana */
+}
+ 
 
 div.inicio img {
   width: 50%;
@@ -106,7 +123,7 @@ div.inicio img {
 div#SobreNosotros {
   z-index: 90; /* Asegúrate de que el nav esté siempre encima del contenido */
 display:flex;
-  background-color: #22203b;
+  background-color: #242B40;
   color:white;
   height: auto;
 
@@ -177,6 +194,8 @@ display:flex;
   background-color: #22203b;
   color:white;
   height: auto;
+  border-bottom: 1px black solid;
+  box-shadow: 0 3px 11px black;
 
 }
 div#Equipo div.texto{
@@ -354,9 +373,14 @@ div.espacio {
 
 /* EQUIPO */
 
+
 body.team{
   
   background-color: #26203A;
+
+}
+body.team h1{
+  padding-top: 20px;
 
 }
 div#team{
