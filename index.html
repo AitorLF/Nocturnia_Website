@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -7,11 +7,10 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
       rel="stylesheet"
     />
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nocturnia</title>
-    <link rel="stylesheet" href="./src/styles.css" />
+    <link rel="stylesheet" href="/src/styles.css" />
   </head>
   <body>
     <nav>
@@ -42,9 +41,12 @@
           "We turn darkness into adventures. Where shadows come to life and
           creativity awakens worlds."
         </p>
-        <button>Read More</button>
+       <!-- <button>Read More</button>*/  -->
       </div>
-      <div id="SobreNosotros" class="espacio">
+
+
+      <!-- Contenedor de texto e imagen lado a lado -->
+      <div id="SobreNosotros" class="espacio color flex-container">
         <div class="texto">
           <h1>Sobre Nosotros</h1>
           <p>
@@ -61,11 +63,7 @@
             Nuestro viaje comenzó con la unión de mentes creativas, cada una
             aportando su propio talento y perspectiva única. Movidos por la
             pasión por la narrativa, el diseño y la innovación, hemos convertido
-            esa pasión en el motor que impulsa nuestro trabajo diario. Desde
-            nuestros modestos comienzos, hemos crecido en habilidades y
-            ambiciones. Nuestra dedicación nos ha llevado a explorar nuevos
-            horizontes, siempre manteniendo nuestra dedicación a la calidad y la
-            creatividad en cada proyecto que emprendemos.
+            esa pasión en el motor que impulsa nuestro trabajo diario.
 
             <br /><br />
             <br />
@@ -76,28 +74,37 @@
             de lo posible en el mundo del entretenimiento interactivo.
           </p>
         </div>
-        <div class="imagen"></div>
-      </div>
-      <div id="Zenith" class="espacio">
-        <div id="centrado">
-          <h1>Zenith</h1>
-          <p>
-            Nos encontramos inmersos en el desarrollo de 'Zenith', un ARPG
-            desafiante con un arte estilizado. Este juego representa nuestra
-            pasión por la narrativa inmersiva y la creatividad visual.
-            <br /><br /><br />
-            En 'Zenith', los jugadores se embarcarán en una aventura épica llena
-            de personajes memorables y un mundo cautivador por explorar
-          </p>
-
-          <form action="./zenith.html">
-            <button type="submit">Explora Zenith</button>
-          </form>
+        <div class="imagen">
+          <img src="./IMG/Capa2.png" alt="Equipo Nocturnia" />
         </div>
       </div>
-      <div id="Equipo" class="espacio">
-        <div class="imagen"></div>
 
+      <div id="Zenith" class="espacio color flex-container2">
+        <div id="centrado" class="texto">
+          <div class="zenith zenithimg">
+            <img src="./IMG/Boceto.png" alt="">
+           </div>
+          <div class="zenith zenithtxt"> <h1>Zenith</h1>
+            <p>
+              Nos encontramos inmersos en el desarrollo de 'Zenith', un ARPG
+              desafiante con un arte estilizado. Este juego representa nuestra
+              pasión por la narrativa inmersiva y la creatividad visual.
+              <br /><br /><br />
+              En 'Zenith', los jugadores se embarcarán en una aventura épica llena
+              de personajes memorables y un mundo cautivador por explorar.
+            </p>
+  
+            <form action="./zenith.html">
+              <button type="submit">Explora Zenith</button>
+            </form></div>
+         
+        </div>
+      </div>
+
+      <div id="Equipo" class="espacio color flex-container">
+        <div class="imagen">
+          <img src="/IMG/Capa3.png" alt="Nuestro equipo" />
+        </div>
         <div class="texto">
           <h1>Equipo</h1>
           <p>
@@ -119,7 +126,7 @@
         </div>
       </div>
 
-      <div id="Contacto" class="espacio">
+      <div id="Contacto" class="espacio color">
         <h1>Contacto</h1>
         <div class="contener">
           <div class="contactar uno">
@@ -150,34 +157,34 @@
             <h1>Nuestras Redes</h1>
             <div class="grid_iconos">
               <div class="grid_item redes_uno">
-                <a href="www.twitter.com"
-                  ><img src="./IMG/twitter_logo_65px.png" alt="" srcset=""
-                /></a>
+                <a href="https://www.twitter.com">
+                  <img src="./IMG/twitter_logo_65px.png" alt="Twitter" />
+                </a>
               </div>
               <div class="grid_item redes_dos">
-                <a href="www.twitter.com"
-                  ><img src="./IMG/youtube_logo_65px.png" alt="" srcset=""
-                /></a>
+                <a href="https://www.youtube.com">
+                  <img src="./IMG/youtube_logo_65px.png" alt="YouTube" />
+                </a>
               </div>
               <div class="grid_item redes_tres">
-                <a href="www.twitter.com"
-                  ><img src="./IMG/steam_logo_65px.png" alt="" srcset=""
-                /></a>
+                <a href="https://store.steampowered.com">
+                  <img src="./IMG/steam_logo_65px.png" alt="Steam" />
+                </a>
               </div>
               <div class="grid_item redes_cuatro">
-                <a href="www.twitter.com"
-                  ><img src="./IMG/linkedin_logo_65px.png" alt="" srcset=""
-                /></a>
+                <a href="https://www.linkedin.com">
+                  <img src="./IMG/linkedin_logo_65px.png" alt="LinkedIn" />
+                </a>
               </div>
               <div class="grid_item redes_cinco">
-                <a href="www.twitter.com"
-                  ><img src="./IMG/instagram_logo_65px.png" alt="" srcset=""
-                /></a>
+                <a href="https://www.instagram.com">
+                  <img src="./IMG/instagram_logo_65px.png" alt="Instagram" />
+                </a>
               </div>
               <div class="grid_item redes_seis">
-                <a href="www.twitter.com"
-                  ><img src="./IMG/gmail_logo_65px.png" alt="" srcset=""
-                /></a>
+                <a href="mailto:email@example.com">
+                  <img src="./IMG/gmail_logo_65px.png" alt="Gmail" />
+                </a>
               </div>
             </div>
           </div>
@@ -186,15 +193,9 @@
     </div>
 
     <footer>
-      <div class="footer">
-        <div class="footer-element">
-          <h2>Contact</h2>
-          <p></p>
-        </div>
-        <div class="footer-element">
-          <h2>Nuestras Redes</h2>
-          <div class="RedesSociales"></div>
-        </div>
+      <div class="footer-element">
+        <p>&copy; 2024 Nocturnia Studios. Todos los derechos reservados.</p>
+        <p><a href="/privacy-policy.html">Política de Privacidad</a> | <a href="/terms.html">Términos y Condiciones</a></p>
       </div>
     </footer>
     <script src="scripts.js"></script>

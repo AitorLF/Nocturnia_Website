@@ -1,4 +1,6 @@
 Imagenes perdidas
     Nubes reducidas
     Estrellas fondo
+
+    Ajustar el tema del responsive 
     

@@ -38,8 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
             // Añadir clase CSS al div
              // Crear un nuevo elemento img para la imagen del equipo
              const newImg = document.createElement('img');
-             newImg.src = "./IMG/" + item.image; // Establecer la ruta de la imagen
-             newImg.alt = "./IMG/profile.png"
+             newImg.src = "./IMG/workers/" + item.image; // Establecer la ruta de la imagen
+             newImg.alt = "./IMG/workers/profile.png"
 
              newImg.onerror = function() {
               this.onerror = null; // Evita un bucle infinito si la imagen predeterminada también falla
