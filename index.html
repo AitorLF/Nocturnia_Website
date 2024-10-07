@@ -17,20 +17,23 @@
   </head>
   <body class="pagina1">
     <nav>
- <div id="logo">
+      <div id="logo">
         <a id="scroll-to-top">
           <img src="./IMG/logos/Logo.png" alt="Logo" />
         </a>
       </div>
       <div class="nav-container">
-        <button class="nav-toggle" id="nav-toggle">☰</button>
-        <ul id="nav-links">
-          <li class="boton"><a href="#Zenith">Zenith</a></li>
-          <li class="boton centro"><a href="#SobreNosotros">Sobre Nosotros</a></li>
-          <li class="boton"><a href="#Contacto">Contacto</a></li>
-        </ul>
+        <!-- <button class="nav-toggle" id="nav-toggle">☰</button> -->
+        <div class="links">
+          <ul id="nav-links">
+            <li class="boton"><a href="#Zenith">Zenith</a></li>
+            <li class="boton"><a href="#SobreNosotros">Sobre Nosotros</a></li>
+            <li class="boton"><a href="#Contacto">Contacto</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
+    
     <div id="content">
       <div class="espacio inicio">
         <h1><img src="./IMG/logos/LogoNocturnia.png" alt="" /></h1>
@@ -42,38 +45,29 @@
        <!-- <button>Read More</button>*/  -->
       </div>
 
-      <div class="background-container">
+      <div id="Zenith" class="background-container">
         <img src="./IMG/BackGround.png" alt="Imagen de fondo">
+        
+        <div class="overlay-content ">
+          <h1>Zenith</h1>
+          <p>
+            Nos encontramos inmersos en el desarrollo de 'Zenith', un ARPG
+            desafiante con un arte estilizado. Este juego representa nuestra
+            pasión por la narrativa inmersiva y la creatividad visual.
+            <br /><br /><br />
+            En 'Zenith', los jugadores se embarcarán en una aventura épica llena
+            de personajes memorables y un mundo cautivador por explorar.
+          </p>
+
+
+            <button class="proximamente" type="submit">Proximamente</button>
+
+        </div>
         <!-- Contenido adicional -->
       </div>
-
-
-
-
-      <div id="Zenith" class="espacio color flex-container2">
-        <div id="centrado" class="texto">
-          <div class="zenith zenithtxt"> <h1>Zenith</h1>
-            <p>
-              Nos encontramos inmersos en el desarrollo de 'Zenith', un ARPG
-              desafiante con un arte estilizado. Este juego representa nuestra
-              pasión por la narrativa inmersiva y la creatividad visual.
-              <br /><br /><br />
-              En 'Zenith', los jugadores se embarcarán en una aventura épica llena
-              de personajes memorables y un mundo cautivador por explorar.
-            </p>
-  
-
-              <button class="proximamente" type="submit">Proximamente</button>
-            </div>
-<!--       <form action="./zenith.html">
-              <button type="submit">Explora Zenith</button>
-            </form></div> -->
-          </div> 
-        </div>
-
       <!-- Contenedor de texto e imagen lado a lado -->
       <div id="SobreNosotros" class="espacio color flex-container">
-        <div class="texto">
+        <div class="texto texto1">
           <h1>Sobre Nosotros</h1>
           <p>
             Somos un equipo fundado por apasionados creativos, inicialmente
@@ -112,7 +106,7 @@
         <div class="imagen responsive">
           <img src="./IMG/Capa3.png" alt="Nuestro equipo" />
         </div>
-        <div class="texto">
+        <div class="texto texto2">
           <h1>Equipo</h1>
           <p>
             Nuestro equipo en Nocturnia Studios está compuesto por un grupo
@@ -126,7 +120,7 @@
             objetivo común: llevar la innovación y la excelencia a cada aspecto
             de nuestros proyectos.
           </p>
-          <br /><br /><br />
+        
           <form action="./equipo.html">
             <button>Nuestro Equipo</button>
           </form>
@@ -135,51 +129,29 @@
 
       
     </div>
-    <footer class="foot">
-      <div id="Contacto" class="espacio color">
-        <h1>Contacto</h1>
-        <div class="contener">
-         
-          <div class="contactar borrador">
-            <h1>Contacta con nosotros</h1>
-
-            <h2>Sede</h2>
-            <h3>Correo de Contacto</h3>
-            <p>asdasdasdasd@gmail.com</p>
-             
-          </div>
-          <div class="contactar dos">
-
-            <div class="grid_iconos">
-        
+    <footer id="Contacto" class="foot">
+      <div id="footer">
+                    <h2>CONTACTO</h2>
+                    <div class="iconos">
                 <a href="https://www.twitter.com">
                   <img src="./IMG/logos/twitter_logo_65px.png" alt="Twitter" />
                 </a>
-      
-      
                 <a href="https://www.instagram.com">
                   <img src="./IMG/logos/instagram_logo_65px.png" alt="Instagram" />
                 </a>
-        
-         
-                
                 <a href="https://www.youtube.com">
                   <img src="./IMG/logos/youtube_logo_65px.png" alt="YouTube" />
                 </a>
- 
-      
                 <a href="https://store.steampowered.com">
                   <img src="./IMG/logos/steam_logo_65px.png" alt="Steam" />
                 </a>
-     
- 
                 <a href="https://www.linkedin.com">
                   <img src="./IMG/logos/linkedin_logo_65px.png" alt="LinkedIn" />
                 </a>
-
-              
-           
             </div>
+            <p>nocturniastudios@gmail.com</p>
+          
+            
           </div>
         </div>
       </div>

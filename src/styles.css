@@ -19,6 +19,13 @@ p {
   cursor: not-allowed;
 }
 /* NAV */
+#logo {
+  position: absolute; /* Mantiene el logo fijo en la esquina */
+  left: 2em; /* Ajusta el espacio alrededor del logo */
+  top: 50%; /* Centra verticalmente en el nav */
+  transform: translateY(-50%); /* Ajusta la posición para centrarlo verticalmente */
+}
+
 nav {
   background-color: #040710; /* Azul oscuro */
   position: fixed;
@@ -28,38 +35,43 @@ nav {
   z-index: 1000;
   border-bottom: #bf9b30 2px solid;
   height: 4em;
+  display: flex; /* Convertimos el nav en un contenedor flex */
+  align-items: center; /* Centra verticalmente todos los elementos en el nav */
+  justify-content: center; /* Esto solo afecta a los elementos de la derecha */
 }
-nav ul {
 
+.links {
+  flex: 1; /* Permite que este contenedor ocupe el espacio disponible */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente los enlaces */
+}
+
+nav ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-evenly; /* Centra los elementos */
+  justify-content: center; /* Centra los elementos horizontalmente */
   align-items: center;
-  margin: 0;
-  padding: 0;
+  margin: 0; /* Sin margen */
+  padding: 0; /* Sin padding */
 }
+
 nav ul li {
   margin: 0 20px; /* Añade un poco de espacio entre los elementos */
 }
+
 nav ul li a {
   color: #eceff4;
   text-decoration: none;
   font-size: 1.2em;
-  transition: color 0.3s ease;
 }
+
 nav ul li a:hover {
   color: #d4af37; /* Dorado al pasar sobre el enlace */
 }
-#logo{
-  position: fixed;
-  cursor: pointer;
-  margin: 0 2em; /* Ajusta el espacio alrededor del logo */
-  
+
+.nav-toggle {
+  display: none; /* Puedes mantener esto si no necesitas un botón toggle */
 }
-  .nav-toggle {
-    display: none;
-}
-  /* NAV LOGO */
 
 
 
@@ -68,10 +80,7 @@ nav ul li a:hover {
 
   text-align: center;
 }
-#Zenith {
-  padding: 30px 20px;
 
-}
 .color {
   background-color: #00344b;
 }
@@ -151,16 +160,13 @@ button:hover {
   object-position: center; /* Centra la imagen dentro del contenedor */
 
 }
-.flex-container .texto {
-  flex: 1;
-  padding: 20px;
-}
+
 .flex-container .imagen {
   flex: 0 0 40%;
 }
 
 .flex-container .texto {
-  flex: 0 0 60%; 
+  flex: 0 0 50%; 
   font-size: 18px;
 }
 .flex-container {
@@ -217,22 +223,7 @@ margin: 0 0;
   background-position: center;
   background-size: cover;
 }
-.zenithtxt {
 
-  padding: 2% 5%;
-  text-align: center;
-  width: 20%;
-  margin: 30px;
-  background-color: rgba(0, 52, 75, 0.7);
-  flex: 1;
-}
-
-#centrado {
-  height: 50%;
-  align-items: center;
-  display: flex;
-  margin: 0, auto;
-}
 
 /* FORMULARIO */
 form {
@@ -284,16 +275,20 @@ div#Contacto div.dos {
 
 }
 /* FOOTER */
-#Contacto{
-  background: linear-gradient(#00344b 1024px, #040710);
-
+footer{
+  padding-top: 2%;
+  background: linear-gradient(to bottom, #00344b 0%, #040710 10%, #040710 100%);
 }
 .foot {
 
   color: #eceff4;
   text-align:center
 }
-
+#footer h2{
+  
+  padding-top: 0;
+  margin-top: 0;
+}
 
 
 
