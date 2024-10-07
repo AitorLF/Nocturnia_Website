@@ -15,6 +15,9 @@ p {
   color: #eceff4; /* Texto claro */
 }
 
+.proximamente{
+  cursor: not-allowed;
+}
 /* NAV */
 nav {
   background-color: #040710; /* Azul oscuro */
@@ -48,17 +51,25 @@ nav ul li a:hover {
 
   /* NAV LOGO */
   nav ul li.logo {
+    cursor: pointer;
     margin: 0 50px; /* Ajusta el espacio alrededor del logo */
   }
   nav ul li.logo img {
     width: 50px;
     height: auto;
   }
+  .nav-toggle {
+    display: none;
+}
 
 /* GENERAL DIVS */
 .espacio {
-  padding: 30px 20px;
+
   text-align: center;
+}
+#Zenith {
+  padding: 30px 20px;
+
 }
 .color {
   background-color: #00344b;
@@ -70,7 +81,7 @@ nav ul li a:hover {
 div.inicio {
   top: 100px;
   background-color: rgba(10, 31, 56, 0.7);
-  background-image: url("/IMG/clouds-lg_edited2.png"), url("/IMG/Estrellas.png");
+  background-image: url("../IMG/clouds-lg_edited2.png"), url("../IMG/Estrellas.png");
   background-blend-mode: darken, normal;
   background-size: 100% 100%, auto;
   background-position: center 20px;
@@ -87,14 +98,25 @@ div.inicio {
     background-position: 0, center bottom;
   }
   100% {
-    background-position: -100vw, center bottom;
+    background-position: -99vw, center bottom;
   }
 }
 
 .inicio h1 img {
   max-width: 100%; /* Ajusta la imagen de la intro */
 }
+.Img{
+  align-self: flex-start;
+  align-items: center;
+  width: 3vw;
+  height: auto;
+}
+.containerLogos{
+  display:flex;
+  flex-wrap:wrap ;
+  justify-content: space-evenly;
 
+}
 .espacio.inicio {
   display: flex;
   flex-direction: column;
@@ -126,6 +148,7 @@ button:hover {
   object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
   object-position: center; /* Centra la imagen dentro del contenedor */
   right: 0px;
+  left: 0px;
 }
 .flex-container .texto {
   flex: 1;
@@ -140,10 +163,9 @@ button:hover {
   font-size: 18px;
 }
 .flex-container {
-  padding-right: 1px; /*Para que la imagen este ajustada al borde*/
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -175,6 +197,9 @@ button:hover {
 form {
   margin: 20px;
   width: auto;
+}
+.proximamente{
+  margin-bottom:20px
 }
 
 .name-fields {
@@ -220,9 +245,21 @@ textarea#mensaje {
 div#Contacto {
   background: linear-gradient(#00344b 80%, #040710);
 }
+div#Contacto>h1{
+  margin-top:0px;
+  padding-top:20px;
+}
 
 div#Contacto div.contener {
   display: flex;
+}
+div.borrador>h1, div.borrador>h2, div.borrador>h3{
+  text-align: center;
+}
+div#Contacto div.borrador {
+  text-align: left;
+  margin: 1vw;
+  flex: 2;
 }
 div#Contacto div.uno {
   margin: 1vw;
@@ -254,7 +291,7 @@ footer {
   background-color: #040710;
   padding: 40px;
   color: #eceff4;
-  text-align: center;
+  text-align:center
 }
 
 footer .footer-element {
@@ -275,7 +312,14 @@ footer a:hover {
   text-decoration: underline;
 }
 
+
+
+
+
 /* TEAM/EQUIPO */
+.clear{
+  text-decoration: none;
+}
 body.team{
   padding-top: 79px;
   background-color: #00344b;
@@ -285,35 +329,51 @@ body.team{
   text-align: center;
 }
 div.teamflex{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  justify-items: center;
+ 
+  padding: 1vw;
   margin: auto;
   max-width:90%;
   border-radius: 10px;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   text-align: center;
   color:white;
   background-color:#00212f;
 
+}
+@media (max-width: 1440px) {
+  div.teamflex{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);}
 
 }
 .teamIndividual img{
   max-width:15vw;
 }
-.teamIndividual h3,p{
+.teamIndividual h3,.teamIndividual p{
+
 text-align: start;
 overflow-wrap: break-word;
 hyphens: auto;
 
 }
 .teamIndividual{
+  align-items: flex-start;
   border: #d4af37 solid 2px;
   width: 15vw;
   border-radius: 15px;
   padding: 10px;
   margin:10px;
 }
+/*  ORDEN ICONOS  */
+.Linkedin{order:0;}
+.Artstation{order:10;}
+.Github{order:20;}
+.Webpropia{order:50;}
+.Youtube{order:30;}
+.Instagram{order:40;}
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
@@ -335,15 +395,90 @@ hyphens: auto;
 }
 
 /* Adaptabilidad para pantallas pequeñas */
-@media screen and (max-width: 768px) {
-  .flex-container {
+@media (max-width: 1024px) {
+}
+
+
+/* Estilos para móviles (ancho menor a 768px) */
+@media (max-width: 767px) {
+.responsive{
+display: none;
+}
+
+  /* Ocultar los links y mostrar el botón de tres barras */
+  #nav-links {
+    display: none;
+    align-items: center;
     flex-direction: column;
-    text-align: center;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    background-color: #040710;
   }
 
-  .flex-container .imagen,
-  .flex-container .texto {
-    width: 100%;
-    padding: 0;
+  #nav-links li {
+    text-align: center;
+    padding: 10px 0;
   }
+
+  .nav-toggle {
+    display: block;
+
+    cursor: pointer;
+  }
+
+  /* Mostrar el menú cuando se active la clase "active" */
+  #nav-links.active {
+    display: flex;
+  }
+
+.nav-container {
+    flex-direction: column;
+    align-items: flex-start;
 }
+
+/* Ocultar el menú inicialmente en móviles */
+ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+.boton {
+    text-align: left;
+    width: 100%;
+}
+
+.boton a {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #040710;
+    color: white;
+}
+
+.logo {
+    display:none;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Mostrar el botón del menú en móviles */
+.nav-toggle {
+
+}
+
+/* Mostrar el menú cuando esté activo */
+ul.show {
+    display: flex;
+}
+}
+
+.back{
+  background-color: red;
+
+}
+
+  #nav-links.active {
+    display: flex;
+  }

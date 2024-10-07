@@ -11,26 +11,30 @@
   </head>
   <body class="team">
     <nav>
-      <ul>
-        <li class="boton">
-            <a href="./index.html#SobreNosotros">Sobre Nosotros</a>
-        </li>
-        <li class="boton centro">
-            <a href="./index.html#Zenith">Zenith</a>
-        </li>
-        <li class="logo">
-            <a id="scroll-to-top">
-                <img src="./IMG/Logo.png" alt="Logo"/>
-            </a>
-        </li>
-        <li class="boton centro">
-            <a href="./index.html#Equipo">Equipo</a>
-        </li>
-        <li class="boton">
-            <a href="./index.html#Contacto">Contacto</a>
-        </li>
-    </ul>
-    </nav>
+      <div class="nav-container">
+        <a href="./index.html">
+          <button class="nav-toggle" id="nav-toggle"  >&#8617</button></a>
+          <ul id="nav-links">
+              <li class="boton">
+                  <a href="../#SobreNosotros">Sobre Nosotros</a>
+              </li>
+              <li class="boton centro">
+                  <a href="../#Zenith">Zenith</a>
+              </li>
+              <li class="logo">
+                  <a id="scroll-to-top">
+                      <img src="./IMG/logos/Logo.png" alt="Logo" />
+                  </a>
+              </li>
+              <li class="boton centro">
+                  <a href="../#Equipo">Equipo</a>
+              </li>
+              <li class="boton">
+                  <a href="../#Contacto">Contacto</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
     <div id="team" class=" espacioEquipo">
       <h1>Nuestro Equipo</h1>
       <div id="csvContainer" class="teamflex ">
@@ -39,7 +43,6 @@
     <footer>
       <div class="footer-element">
         <p>&copy; 2024 Nocturnia Studios. Todos los derechos reservados.</p>
-        <p><a href="/privacy-policy.html">Política de Privacidad</a> | <a href="/terms.html">Términos y Condiciones</a></p>
       </div>
     </footer>
     <script src="scripts.js"></script>

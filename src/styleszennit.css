@@ -1,9 +1,6 @@
 
 nav{
-width: 50%;
-border-bottom-left-radius: 50px;
-border-bottom-right-radius: 50px;
-
+position: relative;
 
 }
 body{
@@ -39,5 +36,7 @@ div.carrusel{
     background-color: aqua;
 }
 div.uno{
+    background-attachment:scroll;
+    background-size: cover;  background-repeat: no-repeat;
     background-image: url(../IMG/BackGround.png);
 }

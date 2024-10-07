@@ -14,29 +14,24 @@
   </head>
   <body>
     <nav>
-      <ul>
-        <li class="boton">
-          <a href="#SobreNosotros">Sobre Nosotros</a>
-        </li>
-        <li class="boton centro">
-          <a href="#Zenith">Zenith</a>
-        </li>
-        <li class="logo">
-          <a id="scroll-to-top">
-            <img src="./IMG/Logo.png" alt="Logo" />
-          </a>
-        </li>
-        <li class="boton centro">
-          <a href="#Equipo">Equipo</a>
-        </li>
-        <li class="boton">
-          <a href="#Contacto">Contacto</a>
-        </li>
-      </ul>
+      <div class="nav-container">
+        <button class="nav-toggle" id="nav-toggle">☰</button>
+        <ul id="nav-links">
+          <li class="boton"><a href="#SobreNosotros">Sobre Nosotros</a></li>
+          <li class="boton centro"><a href="#Zenith">Zenith</a></li>
+          <li class="logo">
+            <a id="scroll-to-top">
+              <img src="./IMG/logos/Logo.png" alt="Logo" />
+            </a>
+          </li>
+          <li class="boton centro"><a href="#Equipo">Equipo</a></li>
+          <li class="boton"><a href="#Contacto">Contacto</a></li>
+        </ul>
+      </div>
     </nav>
     <div id="content">
       <div class="espacio inicio">
-        <h1><img src="./IMG/LogoNocturnia.png" alt="" /></h1>
+        <h1><img src="./IMG/logos/LogoNocturnia.png" alt="" /></h1>
         <p>
           "We turn darkness into adventures. Where shadows come to life and
           creativity awakens worlds."
@@ -74,14 +69,14 @@
             de lo posible en el mundo del entretenimiento interactivo.
           </p>
         </div>
-        <div class="imagen">
+        <div class="imagen responsive">
           <img src="./IMG/Capa2.png" alt="Equipo Nocturnia" />
         </div>
       </div>
 
       <div id="Zenith" class="espacio color flex-container2">
         <div id="centrado" class="texto">
-          <div class="zenith zenithimg">
+          <div class="zenith zenithimg responsive">
             <img src="./IMG/Boceto.png" alt="">
            </div>
           <div class="zenith zenithtxt"> <h1>Zenith</h1>
@@ -94,15 +89,19 @@
               de personajes memorables y un mundo cautivador por explorar.
             </p>
   
-            <form action="./zenith.html">
+
+              <button class="proximamente" type="submit">Proximamente</button>
+            </div>
+            
+<!--       <form action="./zenith.html">
               <button type="submit">Explora Zenith</button>
-            </form></div>
-         
+            </form></div> -->
+          </div> 
         </div>
       </div>
 
       <div id="Equipo" class="espacio color flex-container">
-        <div class="imagen">
+        <div class="imagen responsive">
           <img src="./IMG/Capa3.png" alt="Nuestro equipo" />
         </div>
         <div class="texto">
@@ -129,7 +128,7 @@
       <div id="Contacto" class="espacio color">
         <h1>Contacto</h1>
         <div class="contener">
-          <div class="contactar uno">
+          <!-- <div class="contactar uno">
             <h1>Contacta con nosotros</h1>
             <form>
               <div class="name-fields">
@@ -152,38 +151,46 @@
 
               <button type="submit">Send</button>
             </form>
+          </div> -->
+          <div class="contactar borrador">
+            <h1>Contacta con nosotros</h1>
+
+            <h2>Sede</h2>
+            <h3>Correo de Contacto</h3>
+            <p>asdasdasdasd@gmail.com</p>
+             
           </div>
           <div class="contactar dos">
             <h1>Nuestras Redes</h1>
             <div class="grid_iconos">
               <div class="grid_item redes_uno">
                 <a href="https://www.twitter.com">
-                  <img src="./IMG/twitter_logo_65px.png" alt="Twitter" />
+                  <img src="./IMG/logos/twitter_logo_65px.png" alt="Twitter" />
                 </a>
               </div>
               <div class="grid_item redes_dos">
                 <a href="https://www.youtube.com">
-                  <img src="./IMG/youtube_logo_65px.png" alt="YouTube" />
+                  <img src="./IMG/logos/youtube_logo_65px.png" alt="YouTube" />
                 </a>
               </div>
               <div class="grid_item redes_tres">
                 <a href="https://store.steampowered.com">
-                  <img src="./IMG/steam_logo_65px.png" alt="Steam" />
+                  <img src="./IMG/logos/steam_logo_65px.png" alt="Steam" />
                 </a>
               </div>
               <div class="grid_item redes_cuatro">
                 <a href="https://www.linkedin.com">
-                  <img src="./IMG/linkedin_logo_65px.png" alt="LinkedIn" />
+                  <img src="./IMG/logos/linkedin_logo_65px.png" alt="LinkedIn" />
                 </a>
               </div>
               <div class="grid_item redes_cinco">
                 <a href="https://www.instagram.com">
-                  <img src="./IMG/instagram_logo_65px.png" alt="Instagram" />
+                  <img src="./IMG/logos/instagram_logo_65px.png" alt="Instagram" />
                 </a>
               </div>
               <div class="grid_item redes_seis">
                 <a href="mailto:email@example.com">
-                  <img src="./IMG/gmail_logo_65px.png" alt="Gmail" />
+                  <img src="./IMG/logos/gmail_logo_65px.png" alt="Gmail" />
                 </a>
               </div>
             </div>
@@ -194,9 +201,10 @@
     <footer>
       <div class="footer-element">
         <p>&copy; 2024 Nocturnia Studios. Todos los derechos reservados.</p>
-        <p><a href="/privacy-policy.html">Política de Privacidad</a> | <a href="/terms.html">Términos y Condiciones</a></p>
+        <!-- <p><a href="/privacy-policy.html">Política de Privacidad</a> | <a href="/terms.html">Términos y Condiciones</a></p> -->
       </div>
     </footer>
+    <script src="scriptnav.js"></script>
     <script src="scripts.js"></script>
   </body>
 </html>
