@@ -424,13 +424,13 @@ display: none;
 
 .content{
   width: auto;
-  background: linear-gradient(
+  /* background: linear-gradient(
     rgba(255, 0, 0, 0),    
     rgb(0, 52, 75, 0.5) 10%, 
     hsl(198, 100%, 15%) 50%, 
     rgb(0, 52, 75,0.5) 90%, 
     rgba(255, 0, 0, 0)     
-  );
+  ); */
 }
 
   /* Ocultar los links y mostrar el botón de tres barras */
