@@ -182,6 +182,7 @@ button:hover {
   padding:0px;
   margin: 0px;
   background-image: url(../IMG/BackGround.png);
+  background-size: cover;
   background-position: center;
   display: flex; 
   align-items: center; 
@@ -285,7 +286,11 @@ div#Contacto div.dos {
   width: 32px;
   transition: transform .1s ease;
 }
-.iconos>a>img:hover {
+.iconos>a>img.inactive{
+  filter:invert(60%)
+}
+
+.iconos>a>img.active:hover {
   transform: scale(1.4);
 
 }
@@ -417,9 +422,6 @@ hyphens: auto;
 @media (max-width: 767px) {
 .responsive{
 display: none;
-}
-#zenith{
-
 }
 
 .content{
