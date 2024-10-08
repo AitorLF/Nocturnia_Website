@@ -286,8 +286,12 @@ div#Contacto div.dos {
   width: 32px;
   transition: transform .1s ease;
 }
-.iconos>a>img.inactive{
-  filter:invert(60%)
+.iconos>a.inactive>img{
+  filter:invert(60%);
+}
+.iconos>a.inactive{
+  pointer-events: none; 
+  cursor: default;
 }
 
 .iconos>a>img.active:hover {
