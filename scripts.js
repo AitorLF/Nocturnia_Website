@@ -7,15 +7,9 @@ document.getElementById("scroll-to-top").addEventListener("click", function () {
   });
 });
 
+// script.js
 
 
-const navToggle = document.getElementById('nav-toggle');
-const navLinks = document.getElementById('nav-links');
-
-// Añadir evento click para mostrar/ocultar el menú
-navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-});
 
 
 //CODIGO EQUIPO

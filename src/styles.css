@@ -177,30 +177,45 @@ button:hover {
 }
 
 /* ZENITH */
-.background-container {
-  position: relative;
-  display: inline-block; /* Se ajusta al contenido */
+#Zenith{
+  height: 90vh;
+  padding:0px;
+  margin: 0px;
+  background-image: url(../IMG/BackGround.png);
+  background-position: center;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+
 }
 
-.background-container img {
-  display: block; /* Elimina el espacio extra debajo de la imagen */
-  width: 100%; /* Hace que la imagen se ajuste al ancho del contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
-}
-.overlay-content {
-  position: absolute; /* Para superponerlo sobre la imagen */
-  top: 25%; /* Posición en la parte superior */
-  left: 15%; /* Posición a la izquierda */
-  width: 70%; /* Ocupa todo el ancho del contenedor */
-  height: 50%; /* Ocupa toda la altura del contenedor */
-  display: flex; /* Para centrar el contenido */
+.content{
+  font-size: large;
+padding: 0 35px; /* Padding 0 top bot 25px left right */
+  width: 60%;
+  height: 50%;
+  max-height: auto;
+  display: flex; 
   flex-direction: column;
-  align-items: center; /* Centra verticalmente el contenido */
-  justify-content: center; /* Centra horizontalmente el contenido */
-  color: white; /* Cambia el color del texto */
+  align-items: center; 
+  justify-content: center;
   background-color: rgba(0, 52, 75, 0.7);
-  text-align: center; /* Centra el texto */
 }
+
+/* .overlay-content {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  width: 70%;
+  height: 50%; 
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  color: white; 
+  background-color: rgba(0, 52, 75, 0.7);
+  text-align: center;
+} */
 
 .overlay-content h1, .overlay-content p {
 padding: 1em 10px 20px 40px ;
@@ -333,6 +348,7 @@ div.teamflex{
 
 }
 @media (max-width: 1440px) {
+ 
   div.teamflex{
     display: grid;
     grid-template-columns: repeat(4,1fr);}
@@ -387,6 +403,13 @@ hyphens: auto;
 @media (max-width: 1024px) {
   .responsive{
     display: none;}
+
+    .flex-container .texto {
+      flex: 0 0 80%; 
+      font-size: 18px;
+    }
+    .content{  font-size:medium;
+    }
 }
 
 
@@ -394,6 +417,20 @@ hyphens: auto;
 @media (max-width: 767px) {
 .responsive{
 display: none;
+}
+#zenith{
+
+}
+
+.content{
+  width: auto;
+  background: linear-gradient(
+    rgba(255, 0, 0, 0),    
+    rgb(0, 52, 75, 0.5) 10%, 
+    hsl(198, 100%, 15%) 50%, 
+    rgb(0, 52, 75,0.5) 90%, 
+    rgba(255, 0, 0, 0)     
+  );
 }
 
   /* Ocultar los links y mostrar el botón de tres barras */
@@ -413,7 +450,6 @@ display: none;
   }
 
   .nav-toggle {
-    display: block;
 
     cursor: pointer;
   }
@@ -441,7 +477,6 @@ ul {
 }
 
 .boton a {
-    display: block;
     width: 100%;
     padding: 15px;
     background-color: #040710;
